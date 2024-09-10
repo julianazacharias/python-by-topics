@@ -1,5 +1,11 @@
-"""HOFs."""
+"""HOFs. High order functions."""
+
+# É UMA FUNÇÃO QUE RECEBE UMA FUNÇÃO,
+# É UMA FUNÇÃO QUE RETORNA UMA FUNÇÃO E
+# É UMA FUNÇÃO QUE RECEBE E RETORNA UMA FUNÇÃO
+
 from typing import Callable, Any
+from itertools import takewhile
 
 soma_2 = lambda val: val + 2
 
@@ -18,10 +24,18 @@ def seleciona(op: str) -> Callable:
     }
     return ops[op]
 
+# seleciona(soma)(5, 10)
+# seleciona(sub)(4, 2)
+
 
 palavras = [
     'amar', 'transar', 'falar', 'abacaxi', 'xixi', 'chute'
 ]
+
+#sorted(palavras)
+#sorted(palavras, key=lambda uma_string: uma_string[1])  #ordenando a partir da posição 1 (segunda posição)
+
+#list(map(lambda val: val*2, palavras))
 
 def take_cond(func, valores):
     for val in valores:
@@ -29,3 +43,5 @@ def take_cond(func, valores):
             yield val
         else:
             break
+
+list(takewhile(lambda x: x < 10, [8, 9, 10, 11])) # enquanto x for menor que 10, vai imprimindo os nums da lista

@@ -1,10 +1,13 @@
-"""Anotações de tipo.
+"""
+Anotações de tipo.
 
 Pesquisar Depois:
 - PEP-484
 - mypy
 - monkeytype
+
 """
+
 from numbers import Number
 from typing import Union, Any, List, Dict, Sequence, Text
 

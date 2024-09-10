@@ -1,4 +1,5 @@
 """Operator."""
+
 from operator import (
     add, mul, sub, itemgetter
 )
@@ -13,5 +14,5 @@ palavras = [
     'amar', 'transar', 'falar', 'abacaxi', 'xixi', 'chute'
 ]
 
-sorted(palavras, key=lambda string: string[1])
-sorted(palavras, key=itemgetter(1))
+sorted(palavras, key=lambda string: string[1]) #same same
+sorted(palavras, key=itemgetter(1)) #same same but better
