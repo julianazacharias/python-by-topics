@@ -8,7 +8,7 @@ This is a compilation of what I have been learning about the Python language
 
 ## Installation
 
-You need to install python3 and that's it!
+It depends on the topic... But first of all, you need to install python3.
 
 ## Usage
 
